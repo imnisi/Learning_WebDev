@@ -1,0 +1,30 @@
+body {
+  background-color: rgb(244, 220, 188);
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+#creator{
+    text-align: center;
+    font-weight: 700;
+}
+
+figure,figcaption{
+    text-align: center;
+    font-weight: 500;
+    font-style: italic;
+
+}
+.details{
+    text-align: justify;
+}
+#quote{
+    font-weight: 600;
+}
+
+a{
+   text-decoration: none; 
+}
