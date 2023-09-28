@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Example - I</title>
+  </head>
+  <body>
+    <h1>Details Form</h1>
+    <form action="/action" method="get" autocomplete="off">
+      <div>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="nme"
+          placeholder="Enter your name here"
+          autofocus
+          size="25"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="gender">Sex:</label>
+        <input type="radio" id="male" name="gender" value="M" /><label
+          for="male"
+          >Male</label
+        >
+        <input type="radio" id="female" name="gender" value="F" /><label
+          for="female"
+          >Female</label
+        >
+      </div>
+      <br />
+      <div>
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+          <option value="" selected disabled>Select an option</option>
+          <option value="Ind">India</option>
+          <option value="USA">India</option>
+          <option value="UK">UK</option>
+          <option value="Aus">Australia</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="msg">Message:<br /></label>
+        <textarea
+          id="msg"
+          name="msg"
+          rows="5"
+          cols="30"
+          style="resize: none"
+        ></textarea>
+      </div>
+      <br />
+      <div>
+        <input type="checkbox" name="sub" id="subscribe" />
+        <label for="subscribe">Subscribe?</label>
+      </div>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

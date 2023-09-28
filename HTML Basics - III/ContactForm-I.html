@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <style>
+      tr,
+      th,
+      td,
+      table {
+        /* border: 2px solid black; */
+        border-collapse: collapse;
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><u>Contact Us Form</u></h1>
+    <form action="/action" method="get" autocomplete="off">
+      <table>
+        <tbody>
+          <tr>
+            <th><label for="name">Name:</label></th>
+            <td colspan="2">
+              <input
+                type="text"
+                id="name"
+                name="nme"
+                placeholder="Enter Your name"
+                autofocus
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <th><label for="Email">Email:</label></th>
+            <td colspan="2">
+              <input
+                type="email"
+                id="Email"
+                multiple
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <th><label for="phone">Contact No:</label></th>
+            <td colspan="2">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{10}"
+                maxlength="10"
+                minlength="10"
+                placeholder="Enter your contact"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <th><label for="gender">Gender:</label></th>
+            <td colspan="2">
+              <input type="radio" id="Male" name="gender" value="M" />
+              <label for="Male">Male</label>
+              <input type="radio" id="Female" name="gender" value="F" />
+              <label for="Female">Female</label>
+            </td>
+          </tr>
+
+          <tr>
+            <th><label for="dob">Date of Birth:</label></th>
+            <td colspan="2"><input type="date" id="dob" name="dob" /></td>
+          </tr>
+
+          <tr>
+            <th><label for="country">Country:</label></th>
+            <td colspan="2">
+              <select name="country" id="country">
+                <option selected disabled>Select an option</option>
+                <option value="Ind">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="AUS">Australia</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <th colspan="3"><label for="msg">Enter your message:</label></th>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <textarea
+                id="msg"
+                name="msg"
+                rows="4"
+                cols="30"
+                placeholder="Write your message here"
+                style="resize: none"
+              ></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td><button type="submit">Submit</button></td>
+            <td><button type="reset">Reset</button></td>
+          </tr>
+
+          <tr>
+            <td>
+              <a href="https:www.youtube.com" target="_blank">YouTube</a>
+            </td>
+
+            <td>
+              <a href="https:www.instagram.com" target="_blank">Instagram</a>
+            </td>
+            <td>
+              <a href="https:www.telegram.com" target="_blank">Telegram</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>
