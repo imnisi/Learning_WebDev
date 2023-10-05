@@ -7,13 +7,17 @@
 #wrapper {
   background-color: #f2ebe3;
   height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   overflow-x: hidden;
   overflow-y: hidden;
 }
 
 #container {
   position: relative;
-  transform: translate(55%, 25%);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
