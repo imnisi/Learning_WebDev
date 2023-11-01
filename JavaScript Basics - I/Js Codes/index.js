@@ -99,3 +99,38 @@ do {
     console.log(i);
     i--;
 } while (i >= 1);
+
+//for-in loop
+let Student = {
+    name: 'Nisi',
+    age: 21,
+    rollno: 75
+};
+for (let key in Student) {
+    //keys are reflected through keys
+    //values are reflected through rectangle[keys]
+    console.log(key, Student[key]);
+}
+
+//for-of loop
+let obj = { a: 1, b: 2, c: 3 };
+
+//If you try to use a for...of loop directly on an object,
+//you’ll get a TypeError that says the object is not iterable
+// for (let keys of obj) {
+//     console.log(keys);
+// }
+
+//accesing keys using Object.keys() method
+for (let key of Object.keys(obj)) {
+    console.log(key, obj[key]);
+}
+
+//access the values using Object.values() method
+for (let values of Object.values(obj)) {
+    console.log(values);
+}
+//access keys, values using Object.enteries() method
+for (let [key, value] of Object.entries(obj)) {
+    console.log(`${key}: ${value}`);
+}
