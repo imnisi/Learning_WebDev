@@ -95,7 +95,7 @@ console.log(nameObj2);
 
 //=======================================Callback Function=================================================
 
-function myDislay(some) {
+function myDisplay(some) {
     console.log(`Sum is ${some}`);
 }
 
@@ -104,7 +104,7 @@ function myCalculator(num1, num2, myCallback) {
     myCallback(sum);
 }
 
-myCalculator(5, 7, myDislay); //In this example , myDisplay is the callback function.
+myCalculator(5, 7, myDisplay); //In this example , myDisplay is the callback function.
 //It is passed to myCalculator() as an argument.
 
 //=======================================Arrow Functions===================================================
